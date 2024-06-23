@@ -11,6 +11,7 @@
 - Change the config setting in config.json
 - Change the environment setting in environment.json
 - Adding more devices in deviceOnBS.json
+  
 ![image](https://github.com/labaxibum/Java-selenium-fw/assets/47781346/7ee31f72-7f7b-4236-82c8-7204facb4b62)
 
 - Report will be exported to a Reports folder after each tests
