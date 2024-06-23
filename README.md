@@ -13,6 +13,7 @@
 - Adding more devices in deviceOnBS.json
 - Report will be exported to a Reports folder after each tests
   + Capture screenshot when having a failed cases
+  + Markup helper within custom markup
 - Logs wild be exported to logs folder
   + After a day, log file will be compressed to a zip file
 
