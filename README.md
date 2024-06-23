@@ -1,6 +1,6 @@
 - This is an automation framework in JAVA 
   + Selenium 4
-  + BrowserStack intergration
+  + BrowserStack integration
   + Local
   + Thread
   + Logs (Log4j)
@@ -26,6 +26,6 @@
 
 - Need to improve
 - [ ] Add API to the framework
-- [ ] Intergrate with Appium & Selenium 4
+- [ ] Integrate with Appium & Selenium 4
 - [ ] Add custom exception
 - [ ] Coding standard in JAVA and Clean code
