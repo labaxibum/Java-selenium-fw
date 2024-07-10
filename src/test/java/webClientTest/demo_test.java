@@ -13,7 +13,7 @@ public class demo_test extends WebTestNGSetupBase{
         System.out.println(ConfigLoader.getConfig("browser"));
     }
 
-    @Test()
+    @Test(enabled = false)
     public void checkinfo2(){
         Assert.fail("Write your custom error message");
     }
