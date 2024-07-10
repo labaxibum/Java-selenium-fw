@@ -31,7 +31,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '21'
-        distribution: 'correcto'
+        distribution: 'correctto'
         cache: maven
     - name: step 3 - Set up a cache for maven
       uses: actions/cache@v2
