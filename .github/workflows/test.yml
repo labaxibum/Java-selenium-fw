@@ -2,7 +2,7 @@ name: Caller Workflow
 
 on:
   workflow_run:
-    workflows: ["Java CI with Maven"]
+    workflows: ["build"]
     types:
       - completed
 jobs:
