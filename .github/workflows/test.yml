@@ -1,0 +1,14 @@
+name: Caller Workflow
+
+on:
+  workflow_run:
+    workflows: ["Java CI with Maven"]
+    types:
+      - completed
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: step 4 - Build project with Maven
+        run: mvn clean test --file pom.xml
