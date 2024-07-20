@@ -1,14 +1,9 @@
-name: Caller Workflow
-
+name: Test
 on:
-  workflow_run:
-    workflows: ["build"]
-    types:
-      - completed
+  workflow_call:
 jobs:
-  test:
+  build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
       - name: step 4 - Build project with Maven
         run: mvn clean test --file pom.xml

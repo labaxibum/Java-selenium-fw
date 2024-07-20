@@ -1,19 +1,10 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Build and test
-
+name: Build
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+  workflow_call:
 jobs:
   build:
     runs-on: windows-latest
@@ -39,11 +30,3 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-  test:
-    needs: build
-    runs-on: windows-latest
-    steps:
-      - uses: actions/setup-java@v3
-      - uses: stCarolas/setup-maven@v5
-      - name: step 4 - Build project with Maven
-        run: mvn clean test --file pom.xml
