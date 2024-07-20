@@ -43,7 +43,5 @@ jobs:
     needs: build
     runs-on: windows-latest
     steps:
-      - uses: actions/setup-java@v3
-      - uses: stCarolas/setup-maven@v5
       - name: step 4 - Build project with Maven
         run: mvn clean test --file pom.xml
